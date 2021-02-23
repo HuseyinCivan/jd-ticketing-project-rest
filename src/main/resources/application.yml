@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 8080
 spring:
   application:
     name: ticketing-project-rest
@@ -8,17 +8,18 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/cybertek
     username: postgres
-    password: admin
+    password: 4145
     driver-class-name: org.postgresql.Driver
-#    initialization-mode: always
+    #    initialization-mode: always
     data: classpath:data.sql
   jpa:
     properties:
-     hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: false
+
   mail:
     host: smtp.gmail.com
     port: 587
